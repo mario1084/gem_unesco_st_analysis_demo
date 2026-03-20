@@ -1,0 +1,9 @@
+qa_rule_id,indicator_family,rule_name,rule_description,severity,action_on_fail
+QA001,household_core,non_missing_weight,"No household-core estimate may be computed with missing or zero final weights",critical,stop
+QA002,household_core,eligible_universe_positive,"Eligible denominator must be positive before publishing an estimate",critical,stop
+QA003,household_core,bounded_rate,"Published proportions must lie in [0,1] before scaling to percentages",critical,stop
+QA004,household_core,source_year_present,"Every published household estimate must retain source_program and source_year",critical,stop
+QA005,household_core,exception_review,"Rows with exception_flag=1 must be reviewed before publication",high,review
+QA006,learning_layer,source_native_only,"Learning layers are imported source-native and must not be recomputed from household files",critical,stop
+QA007,admin_reference,reference_only,"Admin and population layers must be clearly labeled as reference/integration layers",high,review
+QA008,finance_layer,finance_context_only,"OECD DAC/CRS may support SCOPE-style thematic publication but not household row-level harmonization",medium,review

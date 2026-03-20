@@ -1,0 +1,8 @@
+﻿cff-version: 1.2.0
+title: UNESCO Statistical Analysis Demo
+message: If you use this repository, cite it as project documentation.
+authors:
+  - family-names: Gonzalez Sauri
+    given-names: Mario
+type: software
+license: MIT

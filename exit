@@ -1,0 +1,51 @@
+[33m376d3af[m Fix benchmark data source contamination: use WIDE for completion rates
+[33m11aa8a3[m Fix Argentina attending_currently_h inversion: use CH09 (attendance) instead of ESTADO/CH08
+[33m5525f0d[m Add benchmark results for Argentina attendance fix
+[33mea37509[m CORRECTED: Use CH10 for Argentina attendance (not CH09)
+[33m87b3205[m Fix Paraguay lower secondary mapping: use composite ED0504 ranges, correct ISCED codes
+[33m8fb9c8d[m Add Paraguay completion rate diagnostic test
+[33m8d984d6[m Add comprehensive v06 investigation summary
+[33mc15185f[m Add Honduras Gemini audit findings - CRITICAL issues identified
+[33m4ccb27b[m Add Honduras age 20-29 test findings - DATA EXTRACTION ISSUE IDENTIFIED
+[33m8eb7881[m CRITICAL FINDING: Honduras CP407→ED05 classification change in 2022 explains benchmark gaps
+[33m31a8f29[m Document Honduras ED05→ISCED mapping fix (v07)
+[33m98c3bd8[m Add Honduras final correct ED05/CP407→ISCED mapping (v07)
+[33m6f5212e[m Implement Honduras ED05/CP407→ISCED year-conditional mapping
+[33m33d98a1[m Restore correct Paraguay completion logic from v06
+[33m967d5a8[m Implement Argentina NIVEL_ED→ISCED mapping with age-based disambiguation (v08)
+[33mb87d9f1[m Document CH14 integration blockers and maintain age-proxy fix (v09)
+[33m97e485a[m Integrate CH14 for Argentina lower_secondary completion fix (v10)
+[33mb13ade6[m Add CH14 integration summary and complete documentation (v10)
+[33ma88bc21[m Surgical fix for Argentina lower_secondary COMP_LVL: attendance-based fallback
+[33m773517a[m Surgical fix: Stricter CH14>=3 threshold for Argentina traditional secondary ISCED 2
+[33m5bbd951[m Update Argentina section in v05 report: document surgical fix with CH12/CH13/CH14 and stricter thresholds
+[33m85cc116[m Restore NIVEL_ED mapping table with surgical fix logic integrated
+[33m76f78cc[m Paraguay hierarchical ISCED mapping with full age-cohort denominator
+[33m1367eb9[m Update report with latest Paraguay hierarchical mapping results
+[33mdd3de3a[m Fix benchmark integrity: exclude LIT_RATE from WIDE-only assessment
+[33m3926356[m Patch benchmark script: restore LIT_RATE and document data availability
+[33m50b57df[m Implement robust benchmark script with smart fallback logic and source tracking
+[33mb7b19d1[m Add WIDE data acquisition and smart fallback logic section to main report
+[33m0d277c8[m Deploy V3 Patch: Paraguay Upper Secondary Completion (attend-aware filtering)
+[33m7a6043b[m Deploy Honduras surgical patches + two-track reconciliation proof
+[33m3e0d252[m Update final report v05 for v18 deployment: Honduras reconciliation + benchmarks
+[33ma3b011f[m Fix benchmark reporting: properly distinguish and document Honduras harmonized series
+[33m0a57e9d[m Repository cleanup: consolidate investigations and archive old backups
+[33ma9e18c2[m Archive reference backup files from harmonization development
+[33m3a308e9[m Clean scripts/ folder: move development utilities to archive
+[33m6b07b9e[m Update README for consolidated R/pipeline structure
+[33m5a89f8d[m Consolidate pipeline scripts into R/pipeline/
+[33mc05c457[m Archive unused data sources and validate pipeline integrity
+[33m1e7e79a[m Restore learning/admin/population data for complete pipeline
+[33m966c37a[m Hard audit: gem_method_indicator.md v0017 compliance - add Honduras reference age specification
+[33mcbbdd59[m Fix: Configure proper BibTeX citation rendering with pandoc citeproc
+[33md72af15[m docs: Add citation rendering guide for BibTeX configuration
+[33m5c789a9[m Compress WB fallback strategy into concise note after legend
+[33m251389e[m Simplify: Remove redundant Paraguay V3 patch explanation from Results section
+[33mf765a88[m Enhance report: Improve Weighted Population Estimator section and audit Local Harmonization
+[33me17073b[m Fix: Replace malformed inline citation with proper BibTeX format on line 66
+[33m53963b3[m Improve: Add context and flow to Honduras technical sections (lines 241-257)
+[33m4b80e74[m Push the repo
+[33mcbd481f[m[33m ([m[1;31morigin/main[m[33m)[m Initial commit
+[33mc792609[m Uso la licencia MIT de GitHub
+[33m20d34e7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m New report in pdf

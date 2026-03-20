@@ -1,0 +1,433 @@
+source_id,country_code,source_program,source_year,source_period,harmonized_variable,source_file_group,raw_variable,rule_type,required_for_indicator_family,notes
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2021_T1,ARG,EPH,2021,Q1,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2021_T2,ARG,EPH,2021,Q2,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2021_T3,ARG,EPH,2021,Q3,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2021_T4,ARG,EPH,2021,Q4,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2022_T1,ARG,EPH,2022,Q1,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2022_T2,ARG,EPH,2022,Q2,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2022_T3,ARG,EPH,2022,Q3,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2022_T4,ARG,EPH,2022,Q4,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2023_T1,ARG,EPH,2023,Q1,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2023_T2,ARG,EPH,2023,Q2,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2023_T3,ARG,EPH,2023,Q3,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2023_T4,ARG,EPH,2023,Q4,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2024_T1,ARG,EPH,2024,Q1,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2024_T2,ARG,EPH,2024,Q2,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2024_T3,ARG,EPH,2024,Q3,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,age_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH06,direct_copy,household_core,Completed years of age
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,attending_currently_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH10,rule_based_attendance,attendance_oos,"Direct mapping of CH10 attendance question: 1=currently attending, other values=not attending"
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,ch12_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH12,direct_copy,completion_postsecondary,Raw: highest level attended (CH12 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,ch13_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH13,direct_copy,completion_postsecondary,Raw: completion status of attended level (CH13 diagnostic)
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,ch14_raw,usu_individual_T*.txt;usu_hogar_T*.txt,CH14,direct_copy,completion_postsecondary,Raw: last approved grade (CH14 diagnostic for Argentina ISCED mapping)
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,country_code,usu_individual_T*.txt;usu_hogar_T*.txt,constant('ARG'),constant,all,Set to ARG
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,current_level_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH08,recode_level,attendance_completion_postsecondary,Current level attended (CH08)
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,highest_grade_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,completion,No direct grade-completed field verified in active ARG stack
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,highest_level_completed_h,usu_individual_T*.txt;usu_hogar_T*.txt,NIVEL_ED,recode_completion_level,completion_postsecondary,Highest completed level
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,household_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR,identity_concat,all,Within-source household key
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,literacy_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,literacy,No direct literacy field verified in active ARG stack
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,location_h,usu_individual_T*.txt;usu_hogar_T*.txt,MAS_500,recode_location,household_core,Closest verified publication geography
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,person_id_h,usu_individual_T*.txt;usu_hogar_T*.txt,CODUSU+NRO_HOGAR+COMPONENTE,identity_concat,all,Within-source person key
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,repetition_h,usu_individual_T*.txt;usu_hogar_T*.txt,structural_missing,structural_missing,repetition,No direct repetition field verified in active ARG stack
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,sex_h,usu_individual_T*.txt;usu_hogar_T*.txt,CH04,recode_binary,household_core,Male/Female publication coding
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,source_program,usu_individual_T*.txt;usu_hogar_T*.txt,constant('EPH'),constant,all,Set to EPH
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,survey_year,usu_individual_T*.txt;usu_hogar_T*.txt,ANO4,direct_copy,all,Observed annual field
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,wave_id,usu_individual_T*.txt;usu_hogar_T*.txt,TRIMESTRE,direct_copy,all,Observed quarter field
+ARG_EPH_2024_T4,ARG,EPH,2024,Q4,weight_h,usu_individual_T*.txt;usu_hogar_T*.txt,PONDERA,direct_copy,all,Verified expansion factor
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,age_h,*.sav,EDAD,direct_copy,household_core,Completed years of age
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,attending_currently_h,*.sav,CP405,direct_copy,attendance_oos,CP405 = currently attends an educational center
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,country_code,*.sav,constant('HND'),constant,all,Set to HND
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,current_level_h,*.sav,structural_missing,structural_missing,attendance_completion_postsecondary,No current study level field verified in 2021 EPHPM
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,highest_grade_completed_h,*.sav,CP410,direct_copy,completion,CP410 = last approved grade/year
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,highest_level_completed_h,*.sav,CP407,recode_completion_level,completion_postsecondary,CP407 = highest educational level reached
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,household_id_h,*.sav,num_rec+num_hog,identity_concat,all,Verified household identifier
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,literacy_h,*.sav,P403,recode_binary,literacy,P403 = can read and write
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,location_h,*.sav,dominio,recode_location,household_core,Verified public disaggregation field
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,person_id_h,*.sav,num_rec+num_hog+Nper,identity_concat,all,Verified person identifier
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,repetition_h,*.sav,structural_missing,structural_missing,repetition,No repetition field verified in 2021 EPHPM
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,sex_h,*.sav,C03,recode_binary,household_core,Male/Female publication coding
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,source_program,*.sav,constant('EPHPM'),constant,all,Set to EPHPM
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,survey_year,*.sav,derived_from_filename_year,parse_filename,all,No survey-year variable observed; use filename year
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,wave_id,*.sav,derived_from_filename_period,parse_filename,all,Annual/june release from filename
+HND_EPHPM_2021,HND,EPHPM,2021,annual_or_june_release,weight_h,*.sav,FACTOR,direct_copy,all,Verified expansion factor
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,age_h,*.sav,EDAD,direct_copy,household_core,Completed years of age
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,attending_currently_h,*.sav,ED03,direct_copy,attendance_oos,ED03 = currently attends an educational center or virtual modality
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,country_code,*.sav,constant('HND'),constant,all,Set to HND
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,current_level_h,*.sav,ED10,direct_copy,attendance_completion_postsecondary,ED10 = current level studying
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,highest_grade_completed_h,*.sav,ED08,direct_copy,completion,ED08 = last approved grade/year
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,highest_level_completed_h,*.sav,ED05,recode_completion_level,completion_postsecondary,ED05 = highest educational level reached
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,household_id_h,*.sav,HOGAR,identity_concat,all,Verified household identifier
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,literacy_h,*.sav,ED01,recode_binary,literacy,ED01 = can read and write
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,location_h,*.sav,DOMINIO,recode_location,household_core,Verified public disaggregation field
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,person_id_h,*.sav,HOGAR+NPER,identity_concat,all,Verified person identifier
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,repetition_h,*.sav,ED11,direct_copy,repetition,ED11 = repeating year
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,sex_h,*.sav,SEXO,recode_binary,household_core,Male/Female publication coding
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,source_program,*.sav,constant('EPHPM'),constant,all,Set to EPHPM
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,survey_year,*.sav,derived_from_filename_year,parse_filename,all,No survey-year variable observed; use filename year
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,wave_id,*.sav,derived_from_filename_period,parse_filename,all,Annual/june release from filename
+HND_EPHPM_2022,HND,EPHPM,2022,annual_or_june_release,weight_h,*.sav,FACTOR,direct_copy,all,Verified expansion factor
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,age_h,*.sav,EDAD,direct_copy,household_core,Completed years of age
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,attending_currently_h,*.sav,ED03,direct_copy,attendance_oos,ED03 = currently attends an educational center or virtual modality
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,country_code,*.sav,constant('HND'),constant,all,Set to HND
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,current_level_h,*.sav,ED10,direct_copy,attendance_completion_postsecondary,ED10 = current level studying
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,highest_grade_completed_h,*.sav,ED08,direct_copy,completion,ED08 = last approved grade/year
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,highest_level_completed_h,*.sav,ED05,recode_completion_level,completion_postsecondary,ED05 = highest educational level reached
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,household_id_h,*.sav,ID,identity_concat,all,Verified household identifier
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,literacy_h,*.sav,ED01,recode_binary,literacy,ED01 = can read and write
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,location_h,*.sav,DOMINIO,recode_location,household_core,Verified public disaggregation field
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,person_id_h,*.sav,ID+ORDEN,identity_concat,all,Verified person identifier
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,repetition_h,*.sav,ED11,direct_copy,repetition,ED11 = repeating year
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,sex_h,*.sav,SEXO,recode_binary,household_core,Male/Female publication coding
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,source_program,*.sav,constant('EPHPM'),constant,all,Set to EPHPM
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,survey_year,*.sav,derived_from_filename_year,parse_filename,all,No survey-year variable observed; use filename year
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,wave_id,*.sav,derived_from_filename_period,parse_filename,all,Annual/june release from filename
+HND_EPHPM_2023,HND,EPHPM,2023,annual_or_june_release,weight_h,*.sav,FACTOR,direct_copy,all,Verified expansion factor
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,age_h,*.sav,EDAD,direct_copy,household_core,Completed years of age
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,attending_currently_h,*.sav,ED03,direct_copy,attendance_oos,ED03 = currently attends an educational center or virtual modality
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,country_code,*.sav,constant('HND'),constant,all,Set to HND
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,current_level_h,*.sav,ED10,direct_copy,attendance_completion_postsecondary,ED10 = current level studying
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,highest_grade_completed_h,*.sav,ED08,direct_copy,completion,ED08 = last approved grade/year
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,highest_level_completed_h,*.sav,ED05,recode_completion_level,completion_postsecondary,ED05 = highest educational level reached
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,household_id_h,*.sav,HOGAR,identity_concat,all,Verified household identifier
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,literacy_h,*.sav,ED01,recode_binary,literacy,ED01 = can read and write
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,location_h,*.sav,DOMINIO,recode_location,household_core,Verified public disaggregation field
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,person_id_h,*.sav,HOGAR+ORDEN,identity_concat,all,Verified person identifier
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,repetition_h,*.sav,ED11,direct_copy,repetition,ED11 = repeating year
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,sex_h,*.sav,SEXO,recode_binary,household_core,Male/Female publication coding
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,source_program,*.sav,constant('EPHPM'),constant,all,Set to EPHPM
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,survey_year,*.sav,derived_from_filename_year,parse_filename,all,No survey-year variable observed; use filename year
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,wave_id,*.sav,derived_from_filename_period,parse_filename,all,Annual/june release from filename
+HND_EPHPM_2024,HND,EPHPM,2024,annual_or_june_release,weight_h,*.sav,FACTOR,direct_copy,all,Verified expansion factor
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,age_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P02,direct_copy,household_core,P02 = age in years
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,attending_currently_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,direct_copy,attendance_oos,ED08 = currently attends an institution of education
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,country_code,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('PRY'),constant,all,Set to PRY
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,current_level_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,recode_level_from_attendance,attendance_completion_postsecondary,ED08 current-attendance categories are also the current-study level ladder; 19 = does not attend and must map to missing current level
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,highest_grade_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_grade,completion,ED0504 = combined level and approved grade code; split to extract completed grade
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,highest_level_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_level,completion_postsecondary,ED0504 = combined level and approved grade code; split to extract completed level
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,household_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA,identity_concat,all,Verified household identifier
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,literacy_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED02,recode_binary,literacy,ED02 = knows how to read and write
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,location_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,AREA,recode_location,household_core,Verified public disaggregation field
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,person_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA+L02,identity_concat,all,Verified person identifier
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,repetition_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,structural_missing,structural_missing,repetition,No repetition field directly observed in active PRY stack
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,sex_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P06,recode_binary,household_core,P06 = sexo; P02 = edad and must not be used as sex
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,source_program,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('EPHC'),constant,all,Set to EPHC
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,survey_year,REG02_EPHC*.SAV|REG02_EPHC*.csv,derived_from_filename_year,parse_filename,all,No explicit survey-year field observed in 2021 file; use filename year
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,wave_id,REG02_EPHC*.SAV|REG02_EPHC*.csv,derived_from_filename_period,parse_filename,all,Quarterly release inferred from filename
+PRY_EPHC_2021_sav,PRY,EPHC,2021,quarterly,weight_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,FEX,direct_copy,all,Factor de expansion field verified as FEX in 2021
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,age_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P02,direct_copy,household_core,P02 = age in years
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,attending_currently_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,direct_copy,attendance_oos,ED08 = currently attends an institution of education
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,country_code,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('PRY'),constant,all,Set to PRY
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,current_level_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,recode_level_from_attendance,attendance_completion_postsecondary,ED08 current-attendance categories are also the current-study level ladder; 19 = does not attend and must map to missing current level
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,highest_grade_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_grade,completion,ED0504 = combined level and approved grade code; split to extract completed grade
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,highest_level_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_level,completion_postsecondary,ED0504 = combined level and approved grade code; split to extract completed level
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,household_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA,identity_concat,all,Verified household identifier
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,literacy_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED02,recode_binary,literacy,ED02 = knows how to read and write
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,location_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,AREA,recode_location,household_core,Verified public disaggregation field
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,person_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA+L02,identity_concat,all,Verified person identifier
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,repetition_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,structural_missing,structural_missing,repetition,No repetition field directly observed in active PRY stack
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,sex_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P06,recode_binary,household_core,P06 = sexo; P02 = edad and must not be used as sex
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,source_program,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('EPHC'),constant,all,Set to EPHC
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,survey_year,REG02_EPHC*.SAV|REG02_EPHC*.csv,AÑO,direct_copy,all,Observed survey year field
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,wave_id,REG02_EPHC*.SAV|REG02_EPHC*.csv,derived_from_filename_period,parse_filename,all,Annual release from filename
+PRY_EPHC_2022_sav,PRY,EPHC,2022,annual,weight_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,FEX.2022,direct_copy,all,Factor de diseno field verified as FEX.2022 in 2022-2024
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,age_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P02,direct_copy,household_core,P02 = age in years
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,attending_currently_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,direct_copy,attendance_oos,ED08 = currently attends an institution of education
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,country_code,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('PRY'),constant,all,Set to PRY
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,current_level_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,recode_level_from_attendance,attendance_completion_postsecondary,ED08 current-attendance categories are also the current-study level ladder; 19 = does not attend and must map to missing current level
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,highest_grade_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_grade,completion,ED0504 = combined level and approved grade code; split to extract completed grade
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,highest_level_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_level,completion_postsecondary,ED0504 = combined level and approved grade code; split to extract completed level
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,household_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA,identity_concat,all,Verified household identifier
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,literacy_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED02,recode_binary,literacy,ED02 = knows how to read and write
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,location_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,AREA,recode_location,household_core,Verified public disaggregation field
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,person_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA+L02,identity_concat,all,Verified person identifier
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,repetition_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,structural_missing,structural_missing,repetition,No repetition field directly observed in active PRY stack
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,sex_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P06,recode_binary,household_core,P06 = sexo; P02 = edad and must not be used as sex
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,source_program,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('EPHC'),constant,all,Set to EPHC
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,survey_year,REG02_EPHC*.SAV|REG02_EPHC*.csv,AÑO,direct_copy,all,Observed survey year field
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,wave_id,REG02_EPHC*.SAV|REG02_EPHC*.csv,derived_from_filename_period,parse_filename,all,Annual release from filename
+PRY_EPHC_2023_sav,PRY,EPHC,2023,annual,weight_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,FEX.2022,direct_copy,all,Factor de diseno field verified as FEX.2022 in 2022-2024
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,age_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P02,direct_copy,household_core,P02 = age in years
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,attending_currently_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,direct_copy,attendance_oos,ED08 = currently attends an institution of education
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,country_code,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('PRY'),constant,all,Set to PRY
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,current_level_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED08,recode_level_from_attendance,attendance_completion_postsecondary,ED08 current-attendance categories are also the current-study level ladder; 19 = does not attend and must map to missing current level
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,highest_grade_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_grade,completion,ED0504 = combined level and approved grade code; split to extract completed grade
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,highest_level_completed_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED0504,split_code_level,completion_postsecondary,ED0504 = combined level and approved grade code; split to extract completed level
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,household_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA,identity_concat,all,Verified household identifier
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,literacy_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,ED02,recode_binary,literacy,ED02 = knows how to read and write
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,location_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,AREA,recode_location,household_core,Verified public disaggregation field
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,person_id_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,UPM+NVIVI+NHOGA+L02,identity_concat,all,Verified person identifier
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,repetition_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,structural_missing,structural_missing,repetition,No repetition field directly observed in active PRY stack
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,sex_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,P06,recode_binary,household_core,P06 = sexo; P02 = edad and must not be used as sex
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,source_program,REG02_EPHC*.SAV|REG02_EPHC*.csv,constant('EPHC'),constant,all,Set to EPHC
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,survey_year,REG02_EPHC*.SAV|REG02_EPHC*.csv,AÑO,direct_copy,all,Observed survey year field
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,wave_id,REG02_EPHC*.SAV|REG02_EPHC*.csv,derived_from_filename_period,parse_filename,all,Annual release from filename
+PRY_EPHC_2024_sav,PRY,EPHC,2024,annual,weight_h,REG02_EPHC*.SAV|REG02_EPHC*.csv,FEX.2022,direct_copy,all,Factor de diseno field verified as FEX.2022 in 2022-2024
